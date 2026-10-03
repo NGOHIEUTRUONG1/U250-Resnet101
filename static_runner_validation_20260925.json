@@ -1,0 +1,64 @@
+{
+  "campaign": "static_runner_validation_20260925_125142",
+  "protocol": {
+    "duration_seconds": 60,
+    "repetitions": 10,
+    "warmup_calls_per_worker": 20,
+    "batch": 4,
+    "dispatch": "one long-lived VART runner and private input/output buffers per worker thread; barrier synchronized; no application-level round-robin",
+    "validation": "XRM active-CU snapshot captured during every repetition"
+  },
+  "input_sha256": {
+    "xmodel": "da6b56491525b3ccdf46f4aff5ba63ac4d8545ebf809d30fd024f7735c581007",
+    "benchmark_script": "018870e5122d25917d36c8c1f86698df69fde88d04a9d55bcc953699bf980310",
+    "xclbin_1cu": "156afe3e437241fa332ff817b5450c3069c460cf478e189c7eb01f12b0901928",
+    "xclbin_2cu": "e44d1630e590abfdd73426c10beae54ede0eba4c19ca5020997ce261ee0c5489",
+    "xclbin_3cu": "7efc8b0a5d60a1e49e339a52a233cf60a2db6e9a173c32de971fa06f3df91bba"
+  },
+  "measurements": {
+    "1cu_workers_1": {
+      "fps": [162.376905298, 162.830990066, 162.898112014, 162.617146913, 162.440726867, 162.391354449, 162.417076188, 162.416528949, 162.598149544, 162.413903768],
+      "mean": 162.540089406,
+      "sd": 0.190630104,
+      "ci95_half_width": 0.136359087,
+      "active_cus_each_run": 1,
+      "summary_sha256": "e80d3b39bb6d2f3734fd10ad943d2678464ba34a04288b2405e31aa6c9e7e381"
+    },
+    "2cu_workers_1": {
+      "fps": [162.523006294, 162.951805380, 163.506295924, 162.818474368, 162.425816674, 162.297991390, 162.492392119, 162.566074387, 162.379274646, 162.403756913],
+      "mean": 162.636488809,
+      "sd": 0.366211011,
+      "ci95_half_width": 0.261953375,
+      "active_cus_each_run": 1,
+      "summary_sha256": "6e10cae6a7263cb70f64165c5cc6eedf0c359bd3b86194817dd2aa287b6a1efc"
+    },
+    "2cu_workers_2": {
+      "fps": [318.218036643, 321.216759219, 318.631348341, 320.621629452, 318.818590221, 319.797576831, 319.451553807, 320.663879200, 318.509035516, 320.419020692],
+      "mean": 319.634742992,
+      "sd": 1.062397006,
+      "ci95_half_width": 0.759940235,
+      "active_cus_each_run": 2,
+      "within_bitstream_speedup": 1.965332290,
+      "ideal_efficiency_percent": 98.266614501,
+      "summary_sha256": "c8b219a48dcb53de711461593cc47dee7243b7ab80412e519cda8b3c6a7945a7"
+    },
+    "3cu_workers_1": {
+      "fps": [162.142656885, 162.345784165, 162.528759972, 162.320227455, 162.473552511, 162.269858155, 162.288752694, 162.491827049, 162.194748353, 162.212783019],
+      "mean": 162.326895026,
+      "sd": 0.132915065,
+      "ci95_half_width": 0.095075104,
+      "active_cus_each_run": 1,
+      "summary_sha256": "4a7796597dee59253fe4c10182c2a60a681d4473bc31455494820c3e183fa022"
+    },
+    "3cu_workers_3": {
+      "fps": [415.710553455, 423.428225576, 423.838509405, 411.524675859, 413.925103495, 416.790331733, 412.885254352, 409.801689035, 406.162584776, 406.636733470],
+      "mean": 414.070366116,
+      "sd": 6.119134094,
+      "ci95_half_width": 4.377060716,
+      "active_cus_each_run": 3,
+      "within_bitstream_speedup": 2.550842644,
+      "ideal_efficiency_percent": 85.028088137,
+      "summary_sha256": "750da058a603c99a450bdaad843a09fe2714c49e5f9374c2613eb283d50da1c6"
+    }
+  }
+}

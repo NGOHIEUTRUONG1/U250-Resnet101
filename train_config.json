@@ -1,0 +1,68 @@
+{
+  "experiment": "resnet101_cifar100_vai20_train_once",
+  "project_root": "/datastore/icc_fce/resnet_paper",
+  "dataset": {
+    "name": "CIFAR-100",
+    "archive": "/datastore/icc_fce/resnet_paper/cifar-100-python.tar.gz",
+    "extracted_root": "/datastore/icc_fce/resnet_paper/data",
+    "official_md5": "eb9058c3a382ffc7106e4002c42a8d85",
+    "train_samples": 45000,
+    "validation_samples": 5000,
+    "test_samples": 10000,
+    "split": "stratified_450_train_50_val_per_class_from_official_train"
+  },
+  "model": {
+    "architecture": "torchvision.models.resnet101",
+    "pretrained": false,
+    "num_classes": 100,
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "normalization_mean": [
+      0.5071,
+      0.4867,
+      0.4408
+    ],
+    "normalization_std": [
+      0.2675,
+      0.2565,
+      0.2761
+    ]
+  },
+  "augmentation": {
+    "random_crop": {
+      "size": 32,
+      "padding": 4
+    },
+    "random_horizontal_flip": 0.5,
+    "resize": [
+      224,
+      224
+    ]
+  },
+  "training": {
+    "epochs": 100,
+    "batch_size": 128,
+    "workers": 8,
+    "seed": 20260920,
+    "optimizer": "SGD",
+    "base_lr": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_schedule": "linear_warmup_5_epochs_then_cosine",
+    "warmup_epochs": 5,
+    "best_metric": "validation_top1",
+    "deterministic": true,
+    "amp": false
+  },
+  "outputs": {
+    "best_checkpoint": "/datastore/icc_fce/resnet_paper/model/float/resnet101_cifar100_best.pt",
+    "last_checkpoint": "/datastore/icc_fce/resnet_paper/model/float/resnet101_cifar100_last.pt",
+    "lock_file": "/datastore/icc_fce/resnet_paper/model/float/TRAIN_ONCE_LOCK.txt",
+    "best_sha256": "/datastore/icc_fce/resnet_paper/model/float/resnet101_cifar100_best.pt.sha256",
+    "metrics_csv": "/datastore/icc_fce/resnet_paper/results/training_metrics.csv",
+    "test_json": "/datastore/icc_fce/resnet_paper/results/float_test_metrics.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "best_checkpoint": "/datastore/icc_fce/resnet_paper/model/float/resnet101_cifar100_best.pt",
+  "best_sha256": "331e2ea6720abf004154b1e58a74b675af2a20f306746ccfda91528533e3ddb3",
+  "best_epoch": 94,
+  "best_val_top1": 0.8072,
+  "official_test": {
+    "samples": 10000,
+    "loss": 0.738611119556427,
+    "top1": 0.8051,
+    "top5": 0.9567
+  },
+  "config_sha256": "3c8173641a04799a9d9eb586324ad8d924575a8e655f54bebf7f89a372a4cdd2",
+  "stack_contract_sha256": "ac2793261fd84bf20edf0acc4c34c80cfd618d8e9aa7032ab17243c4461c9d50",
+  "python": "3.6.8",
+  "torch": "1.8.0+cu111",
+  "torchvision": "0.9.0+cu111",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "checkpoint_tensor_device": "cpu"
+}

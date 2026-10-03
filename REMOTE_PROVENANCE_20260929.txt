@@ -1,0 +1,9 @@
+REMOTE_HOST=asiclab
+REMOTE_ROOT=/home/truongnh/u250_clean_2021_2
+COLLECTED_UTC=2026-09-29T13:41:56Z
+OS=Linux 3.10.0-1160.119.1.el7.x86_64 x86_64 GNU/Linux
+VITIS_AI_COMMIT=d02dcb6041663dbc7ecbc0c6af9fafa087a789de
+v2.0
+INCLUDED_FILE_COUNT=533
+SKIPPED_UNREADABLE_COUNT=1
+POLICY=Source, configuration, text logs, compact evidence, and hashes included; datasets, checkpoints, XModels, XCLBINs, XO/DCP products, reports, caches, compiled directories, and large artifacts excluded.

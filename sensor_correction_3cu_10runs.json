@@ -1,0 +1,13 @@
+{
+  "selection_rule": "sample timestamp inside an xdputil 0%-100% interval and exact labels Power/FPGA",
+  "container_to_sensor_clock_offset_hours": 13,
+  "active_samples": 267,
+  "board_power_w_mean": 98.65906493632959,
+  "board_power_w_sd": 3.498346510823116,
+  "board_power_w_min": 78.131356,
+  "board_power_w_max": 105.247179,
+  "fpga_temperature_c_mean": 54.70037453183521,
+  "fpga_temperature_c_sd": 1.4301137797770962,
+  "fpga_temperature_c_min": 48.0,
+  "fpga_temperature_c_max": 57.0
+}

@@ -1,0 +1,6 @@
+IMAGE_VERSION=2.0.0.1103
+IMAGE_GIT_HASH=06d7cbb
+PYTHON=Python 3.6.15
+VAI_C_XIR=/opt/vitis_ai/conda/envs/vitis-ai-pytorch/bin/vai_c_xir
+ARCH=/opt/vitis_ai/compiler/arch/DPUCADF8H/U250/arch.json
+LOCAL_VITIS_AI_COMMIT=d02dcb6041663dbc7ecbc0c6af9fafa087a789de

@@ -1,0 +1,178 @@
+{
+  "accuracy_hardware": {
+    "elapsed_seconds_including_streamed_preprocess": 126.57521295547485,
+    "images_per_second_including_streamed_preprocess": 79.00440984063509,
+    "input_dims": [
+      4,
+      224,
+      224,
+      3
+    ],
+    "input_fix_point": 5,
+    "input_layout": "NHWC",
+    "input_numel": 602112,
+    "output_dims": [
+      4,
+      1,
+      1,
+      100
+    ],
+    "output_fix_point": 2,
+    "output_numel": 400,
+    "preprocessing_environment": {
+      "input_fix_point": 5,
+      "numpy": "1.17.5",
+      "pillow": "8.0.0",
+      "python": "3.6.15",
+      "samples": 10000,
+      "torch": "1.7.1",
+      "torchvision": "0.8.2",
+      "transform": "Compose(\n    Resize(size=(224, 224), interpolation=PIL.Image.BILINEAR)\n    ToTensor()\n    Normalize(mean=(0.5071, 0.4867, 0.4408), std=(0.2675, 0.2565, 0.2761))\n)"
+    },
+    "runner_batch": 4,
+    "samples": 10000,
+    "top1": 0.7897,
+    "top1_correct": 7897,
+    "top5": 0.9495,
+    "top5_correct": 9495
+  },
+  "artifacts": {
+    "cifar100_archive_md5": "eb9058c3a382ffc7106e4002c42a8d85",
+    "vitis_ai_commit": "d02dcb6041663dbc7ecbc0c6af9fafa087a789de",
+    "xclbin_sha256": "156afe3e437241fa332ff817b5450c3069c460cf478e189c7eb01f12b0901928",
+    "xmodel_fingerprint": "0x0700000000000000",
+    "xmodel_sha256": "da6b56491525b3ccdf46f4aff5ba63ac4d8545ebf809d30fd024f7735c581007"
+  },
+  "card_validation": {
+    "note": "Recorded for audit; not a hard gate because validation binaries vary by installation.",
+    "xbutil_validate_quick_rc": 1
+  },
+  "hardware": {
+    "bdf": "0000:1b:00.0",
+    "board": "Alveo U250",
+    "cu_family": "DPUCADF8H",
+    "dpu_internal_clock_mhz": 500,
+    "external_data_clock_mhz": 300,
+    "external_kernel_clock_mhz": 300,
+    "hardware_cu_count": 1,
+    "xclbin_uuid": "83AF6B35-72A6-F7C7-3FA1-C584C44B7496",
+    "xrt_device_index": 0
+  },
+  "latency_dpu_runner": {
+    "effective_mean_ms_per_image_at_full_batch": 6.17773361079162,
+    "effective_median_ms_per_image_at_full_batch": 6.161559122119797,
+    "input_dims": [
+      4,
+      224,
+      224,
+      3
+    ],
+    "max_ms": 29.425811022520065,
+    "mean_ms": 24.71093444316648,
+    "measured_iterations": 1000,
+    "median_ms": 24.64623648847919,
+    "min_ms": 24.231149989645928,
+    "output_dims": [
+      4,
+      1,
+      1,
+      100
+    ],
+    "p95_ms": 24.745393569173757,
+    "p99_ms": 28.016498161305208,
+    "runner_batch": 4,
+    "std_ms": 0.5174804567862668,
+    "warmup_iterations": 100
+  },
+  "runtime_sensors": {
+    "active_power_samples": 682,
+    "active_temperature_samples": 0,
+    "board_power_w_max": 225.0,
+    "board_power_w_mean": 136.33224314956013,
+    "board_power_w_min": 41.64825,
+    "board_power_w_sd": 88.75976010920483,
+    "temperature_c_max": null
+  },
+  "throughput": {
+    "fps_95ci_half_width": 0.1906517589759905,
+    "fps_cv_percent": 0.16429183369766576,
+    "fps_max": 162.523,
+    "fps_mean": 162.2304,
+    "fps_min": 161.776,
+    "fps_sd": 0.26653129897505795,
+    "n": 10,
+    "runs": [
+      {
+        "fps": 162.417,
+        "frames": 9748,
+        "run": 1,
+        "seconds": 60.0184,
+        "threads": 1
+      },
+      {
+        "fps": 162.523,
+        "frames": 9752,
+        "run": 2,
+        "seconds": 60.0038,
+        "threads": 1
+      },
+      {
+        "fps": 162.438,
+        "frames": 9748,
+        "run": 3,
+        "seconds": 60.0107,
+        "threads": 1
+      },
+      {
+        "fps": 162.396,
+        "frames": 9744,
+        "run": 4,
+        "seconds": 60.0015,
+        "threads": 1
+      },
+      {
+        "fps": 162.49,
+        "frames": 9752,
+        "run": 5,
+        "seconds": 60.0158,
+        "threads": 1
+      },
+      {
+        "fps": 162.149,
+        "frames": 9732,
+        "run": 6,
+        "seconds": 60.0187,
+        "threads": 1
+      },
+      {
+        "fps": 161.776,
+        "frames": 9708,
+        "run": 7,
+        "seconds": 60.0089,
+        "threads": 1
+      },
+      {
+        "fps": 161.846,
+        "frames": 9712,
+        "run": 8,
+        "seconds": 60.0078,
+        "threads": 1
+      },
+      {
+        "fps": 162.105,
+        "frames": 9728,
+        "run": 9,
+        "seconds": 60.0104,
+        "threads": 1
+      },
+      {
+        "fps": 162.164,
+        "frames": 9732,
+        "run": 10,
+        "seconds": 60.0134,
+        "threads": 1
+      }
+    ],
+    "software_threads": 1
+  }
+}
